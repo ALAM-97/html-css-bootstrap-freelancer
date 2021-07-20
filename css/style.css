@@ -53,6 +53,9 @@ footer {
     .md-footer {
         display: none;   
     }
+    .lg-portfolio {
+        display: none;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -68,5 +71,17 @@ footer {
     .md-footer {
         display: block;   
     }
+    .lg-portfolio {
+        display: none;
+    }
 }
 
+@media screen and (min-width: 992px) {
+    .xs-porfolio,
+    .md-portfolio {
+        display: none;
+    }
+    .lg-portfolio {
+        display: block;
+    }
+}
