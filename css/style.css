@@ -23,6 +23,11 @@ section {
     margin: auto;
 }
 
+.btn {
+    color: #fff;
+    margin: 15px;
+}
+
 /* HEADER */
 
 header {
