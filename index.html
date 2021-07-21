@@ -7,9 +7,14 @@
         <!-- BOOTSTRAP -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-            crossorigin="anonymous"></script>
+        <!-- GOOGLE FONTS -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <!-- FONT AWESOME -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+            integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
         <!-- STYLE.CSS -->
         <link rel="stylesheet" href="css/style.css">
         <title>Bootsrap</title>
@@ -17,46 +22,128 @@
 
     <body>
 
-        <header>
-            <div class="container container-md container-lg xs-header">
+        <header class="bg_primary">
+            <div class="container bg_primary">
                 <div class="row">
-                    <div class="col-10">
-                        <div class="">START BOOTSTRAP</div>
+                    <div class="col">
+                        <nav class="navbar navbar-expand-lg navbar-light">
+                            <div class="container-fluid">
+                                <a class="navbar-brand" href="#">START BOOTSTRAP</a>
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" href="#portfolio">Portfolio</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">About</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Contact</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
                     </div>
-                    <div class="col xs-hamburger">MENU</div>
                 </div>
             </div>
-            <div class="container md-header">
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="">START BOOTSTRAP</div>
-                    </div>
-                    <div class="col-md-4"></div>
-                    <div class="col-md-4">
-                        <ul>
-                            <li>PORTFOLIO</li>
-                            <li>ABOUT</li>
-                            <li>CONTACT</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+            
         </header>
 
-        <main>  
-            <section class="pic-section">
-                <div class="container container-md container-lg text-center">
+        <main>
+
+            <!-- HERO SECTION -->
+            <section id="hero" class="bg_secondary">
+                <div class="container text-center">
                     <div class="row">
-                        <div class="col-md-2"></div>
-                        <div class="col col-md-8">
-                            <div>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, soluta. Voluptatibus exercitationem, magni, odit error eum vel sequi neque fuga nulla consequatur facilis! Maiores vero totam eligendi, unde commodi quibusdam. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam incidunt dolorum obcaecati consectetur ab, assumenda tempora ipsam eos sint libero dignissimos quisquam provident at beatae perferendis repellat? Quae, autem tempore. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus impedit aliquid magnam fuga vitae quaerat officia ab commodi, assumenda delectus dicta harum, incidunt dolor unde qui distinctio, culpa accusamus neque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius sunt accusamus assumenda vitae autem culpa id, rem quas at sit earum, est consectetur. Voluptatem obcaecati ad quisquam voluptas, accusamus esse.
+                        <div class="col-12 text-center">
+                            <div class="circle">
+                                <img src="img/avatar.svg" alt="">
                             </div>
-                            <div class="col-md-2"></div>
+                            <h1>START BOOTSTRAP</h1>
+                            <div class="divider">
+                                <div class="divider_line"></div>
+                                <i class="fas fa-star"></i>
+                                <div class="divider_line"></div>
+                            </div>
+                            <p>GRAPHIC ARTIST - WEB DESIGNER - ILLUSTRATOR</p>
                         </div>
                     </div>
                 </div>
             </section>
+
+            <!-- PORTFOLIO SECTION -->
+            <section id="portfolio">
+                <div class="container">
+                    <div class="row text-center">
+                        <div class="col-12">
+                            <h2>PORTFOLIO</h2>
+                        </div>
+                        <div class="divider">
+                            <div class="divider_line grey_line"></div>
+                            <i class="fas fa-star"></i>
+                            <div class="divider_line grey_line"></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <div class="portfolio_over">
+                                <div class="over_eff">
+                                    <i class="fas fa-plus"></i>
+                                    <img src="img/cabin.png" alt="">
+                                </div>     
+                            </div>      
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <div class="portfolio_over">
+                                <div class="over_eff">
+                                    <i class="fas fa-plus"></i>
+                                    <img src="img/cake.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <div class="portfolio_over">
+                                <div class="over_eff">
+                                    <i class="fas fa-plus"></i>
+                                    <img src="img/circus.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <div class="portfolio_over">
+                                <div class="over_eff">
+                                    <i class="fas fa-plus"></i>
+                                    <img src="img/game.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <div class="portfolio_over">
+                                <div class="over_eff">
+                                    <i class="fas fa-plus"></i>
+                                    <img src="img/safe.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <div class="portfolio_over">
+                                <div class="over_eff">
+                                    <i class="fas fa-plus"></i>
+                                    <img src="img/submarine.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- <main>  
 
             <section class="portfolio-section">
                 <div class="container xs-porfolio">
@@ -106,10 +193,10 @@
                     </div>
                 </div>
                 <div class="container-lg lg-portfolio">
-                    <div class="col text-center">
+                    <div class="col">
                         PORTFOLIO
                     </div>
-                    <div class="row">
+                    <div class="row text-center">
                         <div class="col-md-4">
                             <div class="portfolio-image"></div>
                         </div>
@@ -134,7 +221,7 @@
                     
                 </div>
             </section>
-
+           
             <section class="about-section">
                 <div class="container xs-about">
                     <div class="row">
@@ -177,7 +264,7 @@
                     </div>
                 </div>
             </section>
-
+           
             <section class="contact-section">
                 <div class="container">
                     <div class="row">
@@ -197,7 +284,7 @@
                     </div>
                 </div>
             </section>
-
+            
         </main>
 
         <footer>
@@ -251,7 +338,12 @@
                     </div>
                 </div>
             </section>
-        </footer>
+        </footer> -->
         
+        <!-- BOOTSTRAP JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+
     </body>
 </html>
