@@ -24,6 +24,7 @@ header {
     left: 0;      
     right: 0;
     height: 60px;
+    z-index: 1;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -122,4 +123,22 @@ header {
 .portfolio_over:hover .fa-plus {
     opacity: 1;
 }
+
+/* ABOUT */
+
+.wrapper-small {
+    color: #fff;
+    padding: 50px 0;
+    max-width: 1000px;
+    width: 85%;
+    margin: auto;
+}
+
+.btn_about {
+    margin-top: 20px;
+}
+
+/* CONTACT */
+
+
 
